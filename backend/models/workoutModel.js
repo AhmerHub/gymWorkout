@@ -8,7 +8,7 @@ const workoutSchema = new mongoose.Schema({
       required: true
     },
     reps: {
-      type: Number,  // Correct the typo here
+      type: Number,
       required: true
     },
     load: {
