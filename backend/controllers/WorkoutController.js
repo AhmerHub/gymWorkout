@@ -9,7 +9,6 @@ const getWorkouts = async (req, res) => {
     res.status(200).json(Workouts)
 }
 
-
 // get a single workout
 const getWorkout = async (req, res) => {
     const { id } = req.params
@@ -27,7 +26,6 @@ const getWorkout = async (req, res) => {
     res.status(200).json(workout)
 }
 
-
 // create a nw workout
 const createWorkout = async (req, res) => {
     const{title, reps, load} = req.body
@@ -40,7 +38,6 @@ const createWorkout = async (req, res) => {
         res.status(400).json({error: error.message})
     }
 }
-
 
 // delete a workout
     const deleteWorkout = async (req, res) => {
@@ -58,7 +55,6 @@ const createWorkout = async (req, res) => {
     
         res.status(200).json(workout)
     }
-
 
 
 // update a workout
@@ -81,6 +77,7 @@ const createWorkout = async (req, res) => {
     }
 
 
+    
 module.exports = {
     getWorkouts,
     getWorkout,
