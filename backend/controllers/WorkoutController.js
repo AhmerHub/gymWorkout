@@ -4,8 +4,6 @@ const mongoose = require('mongoose')
 // get all workouts
 const getWorkouts = async (req, res) => {
     const Workouts = await Workout.find({}).sort({createdAt: -1})
-
-
     res.status(200).json(Workouts)
 }
 
@@ -18,7 +16,6 @@ const getWorkout = async (req, res) => {
     }
 
     const workout = await Workout.findById(id)
-
     if(!workout) {
         return res.status(404).json({error: "No such Workout"})
     }
