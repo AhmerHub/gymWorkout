@@ -20,7 +20,6 @@ const Home = () => {
         fetchWorkouts()
     }, [dispatch])
 
-
     return(
         <div className="home">
             <div className='Workouts'>
@@ -32,6 +31,5 @@ const Home = () => {
         </div>
     )
 }
-
 
 export default Home
